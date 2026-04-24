@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header id="greeting-section">
+            <h1 id="time">00:00</h1>
+            <p id="date">Date, 01 January 2026</p>
+            <h2 id="greeting-text">Good Morning, <span id="username">User</span></h2>
+        </header>
+
+        <section class="timer-card">
+            <h3>Focus Timer</h3>
+            <div id="timer-display">25:00</div>
+            <div class="timer-controls">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </section>
+
+        <section class="todo-card">
+            <h3>To-Do List</h3>
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="What needs to be done?">
+                <button id="add-todo">Add</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <section class="links-card">
+            <h3>Quick Links</h3>
+            <div id="links-container"></div>
+            <div class="input-group">
+                <input type="text" id="link-name" placeholder="Name">
+                <input type="text" id="link-url" placeholder="URL (https://...)">
+                <button id="add-link">Save Link</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
